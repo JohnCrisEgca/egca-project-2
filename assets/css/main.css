@@ -265,6 +265,9 @@ section, .section {
 .hero .lead { color: #d6e0f0; font-size: 18px; max-width: 34rem; }
 .hero-actions { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 28px; }
 .hero .hero-img {
+  display: block;
+  max-width: 520px;
+  margin-inline: auto;
   width: 100%;
   height: auto;
   object-fit: cover;
