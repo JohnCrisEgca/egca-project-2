@@ -85,4 +85,20 @@
     });
     counters.forEach(function (el) { counterObserver.observe(el); });
   }
+
+  /** Highlight the nav link of the section in view */
+  var navLinks = document.querySelectorAll("#navmenu a");
+
+  function highlightNav() {
+    var pos = window.scrollY + 140;
+    navLinks.forEach(function (link) {
+      var section = document.querySelector(link.getAttribute("href"));
+      if (!section) return;
+      var active = pos >= section.offsetTop && pos < section.offsetTop + section.offsetHeight;
+      link.classList.toggle("active", active);
+    });
+  }
+
+  window.addEventListener("load", highlightNav);
+  document.addEventListener("scroll", highlightNav);
 })();
