@@ -21,7 +21,7 @@ egca-project-2/
 └── assets/
     ├── css/main.css
     ├── js/main.js
-    └── img/        logo, campus illustrations, program images
+    └── img/        school seal, campus photo, program images
 ```
 
 Bootstrap, Bootstrap Icons and AOS are loaded from the jsDelivr CDN, so an internet connection is needed to see the full styling.
