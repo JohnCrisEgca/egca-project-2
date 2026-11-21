@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500" role="img" aria-label="Academic and TVL tracks">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#123a63"/>
+      <stop offset="1" stop-color="#1c5a96"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#g)"/>
+  <circle cx="700" cy="60" r="150" fill="#ffffff" fill-opacity="0.07"/>
+  <circle cx="90" cy="470" r="170" fill="#ffffff" fill-opacity="0.07"/>
+  <g font-family="Poppins, Arial, sans-serif" font-weight="700" text-anchor="middle">
+    <rect x="110" y="150" width="250" height="200" rx="24" fill="#fdf7e7"/>
+    <path d="M235 190 l50 22 l-50 22 l-50 -22z" fill="#0b2a4a"/>
+    <rect x="212" y="226" width="46" height="26" fill="#0b2a4a"/>
+    <text x="235" y="304" font-size="26" fill="#0b2a4a">ACADEMIC</text>
+    <rect x="440" y="150" width="250" height="200" rx="24" fill="#f3c969"/>
+    <circle cx="565" cy="222" r="24" fill="none" stroke="#0b2a4a" stroke-width="8"/>
+    <path d="M565 190 v-12 M565 254 v12 M533 222 h-12 M597 222 h12" stroke="#0b2a4a" stroke-width="8" stroke-linecap="round"/>
+    <text x="565" y="304" font-size="26" fill="#0b2a4a">TVL</text>
+  </g>
+</svg>
