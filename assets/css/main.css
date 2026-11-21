@@ -425,3 +425,21 @@ section, .section {
 .feature-item i { font-size: 36px; color: var(--blue); line-height: 1; }
 .feature-item h3 { font-size: 18px; font-weight: 700; margin: 12px 0 6px; }
 .feature-item p { font-size: 14px; margin: 0; }
+
+/*--------------------------------------------------------------
+# Core values
+--------------------------------------------------------------*/
+.values { background: linear-gradient(180deg, var(--navy) 0%, #0a2340 100%); }
+.values .section-title p { color: #fff; }
+.value-item {
+  height: 100%;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 16px;
+  padding: 24px 12px;
+  transition: all 0.25s;
+}
+.value-item:hover { background: rgba(243, 201, 105, 0.12); border-color: var(--gold-light); transform: translateY(-4px); }
+.value-item i { font-size: 30px; color: var(--gold-light); line-height: 1; }
+.value-item h3 { color: #fff; font-family: var(--nav-font); font-size: 15px; font-weight: 500; margin: 12px 0 0; line-height: 1.4; }
