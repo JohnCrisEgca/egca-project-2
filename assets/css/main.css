@@ -328,3 +328,41 @@ section, .section {
   color: var(--navy);
 }
 .counts .stats-item p { margin: 6px 0 0; font-weight: 600; color: var(--gold); text-transform: uppercase; font-size: 13px; letter-spacing: 1px; }
+
+/*--------------------------------------------------------------
+# Vision and mission
+--------------------------------------------------------------*/
+.vm-box {
+  height: 100%;
+  background: linear-gradient(145deg, var(--navy), var(--blue));
+  color: #d6e0f0;
+  border-radius: 20px;
+  padding: 32px;
+  box-shadow: var(--shadow);
+}
+.vm-box h3 { color: var(--gold-light); font-size: 22px; display: flex; align-items: center; gap: 10px; }
+.vm-box p { margin: 6px 0 0; font-size: 17px; }
+.icon-box {
+  height: 100%;
+  text-align: center;
+  background: #fff;
+  border: 1px solid var(--border-color);
+  border-radius: 20px;
+  padding: 28px 18px;
+  transition: transform 0.25s, box-shadow 0.25s;
+}
+.icon-box:hover { transform: translateY(-5px); box-shadow: var(--shadow); }
+.icon-box i {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: var(--cream);
+  color: var(--gold);
+  font-size: 26px;
+  margin-bottom: 14px;
+}
+.icon-box h4 { font-size: 21px; font-weight: 700; }
+.icon-box p { margin: 0; font-size: 15px; }
