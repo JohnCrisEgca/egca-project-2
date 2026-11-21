@@ -341,7 +341,8 @@ section, .section {
   box-shadow: var(--shadow);
 }
 .vm-box h3 { color: var(--gold-light); font-size: 22px; display: flex; align-items: center; gap: 10px; }
-.vm-box p { margin: 6px 0 0; font-size: 17px; }
+.vm-box p { margin: 6px 0 0; font-size: 16px; line-height: 1.75; }
+.vm-box { display: flex; flex-direction: column; justify-content: center; }
 .icon-box {
   height: 100%;
   text-align: center;
