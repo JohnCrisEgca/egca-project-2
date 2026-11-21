@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 520" width="640" height="520" role="img" aria-label="Illustration of an open book, a cross and a lit candle">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b2a4a"/>
+      <stop offset="1" stop-color="#1c5a96"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.4" r="0.6">
+      <stop offset="0" stop-color="#f3c969" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#f3c969" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="640" height="520" rx="28" fill="url(#bg)"/>
+  <circle cx="320" cy="210" r="210" fill="url(#glow)"/>
+  <!-- cross -->
+  <rect x="306" y="52" width="28" height="170" rx="6" fill="#f3c969"/>
+  <rect x="262" y="100" width="116" height="28" rx="6" fill="#f3c969"/>
+  <!-- rays -->
+  <g stroke="#f3c969" stroke-opacity="0.35" stroke-width="3" stroke-linecap="round">
+    <path d="M320 20 V0"/><path d="M200 70 L180 50"/><path d="M440 70 L460 50"/>
+    <path d="M160 160 H134"/><path d="M480 160 H506"/>
+  </g>
+  <!-- open book -->
+  <path d="M90 330 Q205 300 320 340 Q435 300 550 330 V440 Q435 410 320 450 Q205 410 90 440Z" fill="#fdf7e7"/>
+  <path d="M320 340 V450" stroke="#c9a227" stroke-width="4"/>
+  <g stroke="#b9a974" stroke-width="3" stroke-linecap="round">
+    <path d="M120 355 Q190 340 290 365"/><path d="M120 385 Q190 370 290 395"/><path d="M120 415 Q190 400 290 425"/>
+    <path d="M350 365 Q450 340 520 355"/><path d="M350 395 Q450 370 520 385"/><path d="M350 425 Q450 400 520 415"/>
+  </g>
+  <path d="M82 440 Q205 412 320 458 Q435 412 558 440 V462 Q435 436 320 482 Q205 436 82 462Z" fill="#c9a227"/>
+  <!-- candle -->
+  <rect x="520" y="230" width="34" height="100" rx="5" fill="#fdf7e7"/>
+  <path d="M537 190 q-14 22 0 36 q14 -14 0 -36z" fill="#f3c969"/>
+  <path d="M537 204 q-6 10 0 17 q6 -7 0 -17z" fill="#fff6d6"/>
+  <rect x="510" y="326" width="54" height="10" rx="4" fill="#c9a227"/>
+</svg>

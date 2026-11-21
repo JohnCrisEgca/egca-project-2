@@ -274,3 +274,34 @@ section, .section {
   .hero .lead { margin-inline: auto; }
   .hero-actions { justify-content: center; }
 }
+
+/*--------------------------------------------------------------
+# About
+--------------------------------------------------------------*/
+.about .kicker {
+  font-family: var(--nav-font);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 6px;
+}
+.about .content h2 { font-size: 34px; font-weight: 700; margin-bottom: 16px; }
+.about .content ul { list-style: none; padding: 0; margin: 18px 0 8px; }
+.about .content ul li { display: flex; gap: 10px; padding: 6px 0; }
+.about .content ul i { color: var(--gold); font-size: 18px; line-height: 1.6; }
+.about .about-img { border-radius: 24px; box-shadow: var(--shadow); }
+.about .read-more {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 12px;
+  padding: 10px 26px;
+  border-radius: 50px;
+  background: var(--navy);
+  color: #fff;
+  font-family: var(--nav-font);
+  font-size: 15px;
+}
+.about .read-more:hover { background: var(--gold); color: var(--navy); }
