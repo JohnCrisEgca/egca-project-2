@@ -35,7 +35,7 @@ Open `index.html` in any browser. No build step needed.
 Facts about the school (founding in 1927, the Columban Fathers, levels offered, Senior High School tracks,
 college programs, vision, mission and core values) come from public pages. Please verify them against
 the school's official materials before using this page for anything other than coursework.
-The illustrations are original drawings, not the school's official logo or photos.
+The school seal and campus photo were provided by the author; the program images and the About illustration are original drawings.
 
 ## Credits
 
