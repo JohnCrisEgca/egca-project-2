@@ -305,3 +305,26 @@ section, .section {
   font-size: 15px;
 }
 .about .read-more:hover { background: var(--gold); color: var(--navy); }
+
+/*--------------------------------------------------------------
+# Counts
+--------------------------------------------------------------*/
+.counts { background: var(--soft-bg); padding: 56px 0; }
+.counts .stats-item {
+  text-align: center;
+  background: #fff;
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  padding: 26px 12px;
+  box-shadow: var(--shadow);
+  height: 100%;
+}
+.counts .stats-item span {
+  display: block;
+  font-family: var(--heading-font);
+  font-size: 46px;
+  font-weight: 800;
+  line-height: 1.1;
+  color: var(--navy);
+}
+.counts .stats-item p { margin: 6px 0 0; font-weight: 600; color: var(--gold); text-transform: uppercase; font-size: 13px; letter-spacing: 1px; }

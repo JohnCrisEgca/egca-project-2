@@ -52,4 +52,37 @@
 
   window.addEventListener("load", toggleScrollTop);
   document.addEventListener("scroll", toggleScrollTop);
+
+  /** Animated counters */
+  var counters = document.querySelectorAll(".counter");
+
+  function runCounter(el) {
+    var end = parseInt(el.getAttribute("data-end"), 10) || 0;
+    var duration = 1200;
+    var start = null;
+
+    function step(ts) {
+      if (!start) start = ts;
+      var progress = Math.min((ts - start) / duration, 1);
+      el.textContent = Math.floor(progress * end);
+      if (progress < 1) {
+        requestAnimationFrame(step);
+      } else {
+        el.textContent = end;
+      }
+    }
+    requestAnimationFrame(step);
+  }
+
+  if ("IntersectionObserver" in window && counters.length) {
+    var counterObserver = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          runCounter(entry.target);
+          counterObserver.unobserve(entry.target);
+        }
+      });
+    });
+    counters.forEach(function (el) { counterObserver.observe(el); });
+  }
 })();
