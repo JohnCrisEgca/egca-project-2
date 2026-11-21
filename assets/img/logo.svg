@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="KCC monogram">
+  <path d="M32 3 L57 11 V32 C57 47 46 57 32 61 C18 57 7 47 7 32 V11Z" fill="#0b2a4a" stroke="#c9a227" stroke-width="3"/>
+  <rect x="29.5" y="10" width="5" height="17" rx="1.5" fill="#c9a227"/>
+  <rect x="24" y="15" width="16" height="5" rx="1.5" fill="#c9a227"/>
+  <text x="32" y="47" font-family="Georgia, 'Times New Roman', serif" font-size="15" font-weight="700" text-anchor="middle" fill="#ffffff">KCC</text>
+</svg>

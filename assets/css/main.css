@@ -1,0 +1,234 @@
+/*--------------------------------------------------------------
+# Kabankalan Catholic College landing page
+# Layout structure based on the Mentor (BootstrapMade) template.
+--------------------------------------------------------------*/
+
+:root {
+  --default-font: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --heading-font: "Playfair Display", Georgia, serif;
+  --nav-font: "Poppins", sans-serif;
+
+  --navy: #0b2a4a;
+  --navy-2: #123a63;
+  --blue: #1c5a96;
+  --gold: #c9a227;
+  --gold-light: #f3c969;
+  --cream: #fdf7e7;
+  --background-color: #ffffff;
+  --soft-bg: #f6f8fc;
+  --default-color: #44526b;
+  --heading-color: #0b2a4a;
+  --border-color: #e3e8f1;
+  --shadow: 0 10px 30px rgba(11, 42, 74, 0.1);
+  scroll-behavior: smooth;
+}
+
+body {
+  color: var(--default-color);
+  background: var(--background-color);
+  font-family: var(--default-font);
+  line-height: 1.7;
+}
+
+a { color: var(--blue); text-decoration: none; transition: 0.3s; }
+a:hover { color: var(--gold); }
+
+h1, h2, h3, h4, h5, h6 { color: var(--heading-color); font-family: var(--heading-font); }
+
+section, .section {
+  padding: 80px 0;
+  overflow: clip;
+  scroll-margin-top: 72px;
+}
+
+.section-title { text-align: center; padding-bottom: 46px; }
+.section-title h2 {
+  font-family: var(--nav-font);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 8px;
+}
+.section-title p {
+  font-family: var(--heading-font);
+  font-size: 34px;
+  font-weight: 700;
+  color: var(--heading-color);
+  margin: 0;
+}
+
+/* Buttons */
+.btn-gold,
+.btn-ghost {
+  display: inline-block;
+  font-family: var(--nav-font);
+  font-weight: 500;
+  font-size: 15px;
+  padding: 11px 30px;
+  border-radius: 50px;
+  transition: transform 0.2s, box-shadow 0.2s, background 0.2s, color 0.2s;
+}
+
+.btn-gold {
+  background: var(--gold);
+  color: var(--navy);
+  border: 2px solid var(--gold);
+  box-shadow: 0 6px 18px rgba(201, 162, 39, 0.35);
+}
+.btn-gold:hover {
+  background: var(--gold-light);
+  border-color: var(--gold-light);
+  color: var(--navy);
+  transform: translateY(-2px);
+}
+
+.btn-ghost {
+  color: #fff;
+  border: 2px solid rgba(255, 255, 255, 0.7);
+}
+.btn-ghost:hover { background: #fff; color: var(--navy); border-color: #fff; transform: translateY(-2px); }
+
+/* Preloader and scroll-top */
+#preloader {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.4s;
+}
+#preloader::before {
+  content: "";
+  width: 46px;
+  height: 46px;
+  border: 5px solid var(--gold);
+  border-top-color: transparent;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+
+.scroll-top {
+  position: fixed;
+  right: 15px;
+  bottom: -50px;
+  z-index: 99;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--navy);
+  border: 2px solid var(--gold);
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.4s;
+}
+.scroll-top i { font-size: 26px; color: var(--gold); line-height: 0; }
+.scroll-top:hover { background: var(--gold); }
+.scroll-top:hover i { color: var(--navy); }
+.scroll-top.active { visibility: visible; opacity: 1; bottom: 15px; }
+
+/* Header */
+.header {
+  background: rgba(255, 255, 255, 0.96);
+  backdrop-filter: blur(8px);
+  padding: 12px 0;
+  box-shadow: 0 2px 18px rgba(11, 42, 74, 0.08);
+  z-index: 997;
+}
+.header .logo { gap: 10px; line-height: 1; }
+.header .logo .sitename {
+  font-family: var(--heading-font);
+  font-size: 21px;
+  font-weight: 700;
+  color: var(--navy);
+}
+.header .btn-getstarted {
+  background: var(--navy);
+  color: #fff;
+  font-family: var(--nav-font);
+  font-size: 14px;
+  padding: 8px 24px;
+  margin-left: 28px;
+  border-radius: 50px;
+  white-space: nowrap;
+}
+.header .btn-getstarted:hover { background: var(--gold); color: var(--navy); }
+
+@media (min-width: 1200px) {
+  .navmenu ul { margin: 0; padding: 0; display: flex; list-style: none; align-items: center; }
+  .navmenu a {
+    color: var(--navy);
+    padding: 18px 14px;
+    font-size: 15px;
+    font-family: var(--nav-font);
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  .navmenu a::after {
+    content: "";
+    position: absolute;
+    left: 14px;
+    right: 14px;
+    bottom: 10px;
+    height: 2px;
+    background: var(--gold);
+    transform: scaleX(0);
+    transition: transform 0.25s;
+  }
+  .navmenu a:hover::after,
+  .navmenu a.active::after { transform: scaleX(1); }
+  .navmenu a:hover, .navmenu a.active { color: var(--navy); }
+  .mobile-nav-toggle { display: none; }
+}
+
+@media (max-width: 1199px) {
+  .header .btn-getstarted { order: 2; margin: 0 14px 0 0; padding: 6px 18px; }
+  .header .navmenu { order: 3; }
+  .mobile-nav-toggle { color: var(--navy); font-size: 30px; line-height: 0; cursor: pointer; }
+  .navmenu ul {
+    display: none;
+    position: absolute;
+    inset: 64px 20px auto 20px;
+    padding: 10px 0;
+    margin: 0;
+    border-radius: 10px;
+    background: #fff;
+    border: 1px solid var(--border-color);
+    box-shadow: var(--shadow);
+    list-style: none;
+  }
+  .navmenu a { color: var(--navy); padding: 10px 22px; font-family: var(--nav-font); display: block; }
+  .navmenu a:hover, .navmenu a.active { color: var(--gold); }
+  .mobile-nav-active { overflow: hidden; }
+  .mobile-nav-active .mobile-nav-toggle { position: fixed; top: 20px; right: 15px; z-index: 9999; }
+  .mobile-nav-active .navmenu { position: fixed; inset: 0; background: rgba(11, 42, 74, 0.8); }
+  .mobile-nav-active .navmenu > ul { display: block; }
+}
+
+@media (max-width: 575px) {
+  .header .logo .sitename { font-size: 19px; }
+  .header .btn-getstarted { padding: 6px 14px; font-size: 13px; }
+}
+
+/* Footer */
+.footer {
+  background: var(--navy);
+  color: #c4d0e4;
+  font-size: 14px;
+}
+.footer .footer-top { padding-top: 56px; padding-bottom: 20px; }
+.footer .logo { gap: 12px; color: #fff; }
+.footer .logo .sitename { font-family: var(--heading-font); font-size: 22px; font-weight: 700; color: #fff; }
+.footer h4 { color: var(--gold-light); font-size: 17px; margin-bottom: 14px; }
+.footer .footer-links ul { list-style: none; padding: 0; margin: 0; }
+.footer .footer-links li { padding: 5px 0; }
+.footer a { color: #c4d0e4; }
+.footer a:hover { color: var(--gold-light); }
+.footer .copyright { padding: 24px 12px; border-top: 1px solid rgba(255, 255, 255, 0.12); }
+.footer .copyright p { margin: 0 0 6px; }
+.footer .credits { font-size: 13px; color: #94a6c4; }
